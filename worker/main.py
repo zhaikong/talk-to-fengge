@@ -4,6 +4,9 @@
 所以这里顶层 import livekit.plugins.cartesia，让 plugin 注册发生在 main thread。
 子线程（job runner）再调 build_tts(...) 时不会再走 plugin 装饰器。
 """
+import utils.http_session
+import utils.transport
+import utils.session
 from worker.agent import main
 
 # 阶段 23：主线程预注册 TTS 插件（cartesia / minimax 都列上，未来切换不用重启）

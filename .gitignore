@@ -1,5 +1,4 @@
 # 环境与密钥
-.env.local
 runpod_config.env
 
 # Python
@@ -15,7 +14,6 @@ __pycache__/
 # IDE
 .claude/
 .cursor/
-.vscode/
 .idea/
 
 # 个人素材
@@ -27,3 +25,5 @@ assets/voice_samples/
 
 # 日志
 *.log
+config.bat
+node_modules
